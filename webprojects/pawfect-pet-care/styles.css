@@ -1,0 +1,146 @@
+/* -- GLOBAL -- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 70px;
+    background-color: #fafafa;
+    font-family: system-ui, sans-serif;
+}
+
+/* Reusable color palette */
+:root {
+    --pet-green: #5cb176;
+    --pet-dark: #2f2f2f;
+    --pet-light: #ffffff;
+}
+
+/* -- NAVBAR POLISH -- */
+
+.navbar {
+    background-color: var(--pet-dark) !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    transition: 0.25s;
+}
+
+.nav-link:hover {
+    color: var(--pet-green) !important;
+}
+
+/* -- SECTION TITLES -- */
+
+.section-title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--pet-dark);
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+
+/* -- CAROUSEL POLISH -- */
+
+.carousel-item img {
+    filter: brightness(0.85);
+}
+
+.carousel-caption {
+    border-radius: 12px;
+}
+
+/* Fade-slide animation */
+.carousel-item {
+    transition: opacity 1s ease-in-out;
+}
+
+/* -- SERVICES CARDS POLISH -- */
+
+.card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.25s ease-in-out;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* FORCE equal height images */
+.card-img-top {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Green button styling */
+.card .btn {
+    background-color: var(--pet-green);
+    border: none;
+}
+
+.card .btn:hover {
+    background-color: #4c9b64;
+}
+
+/* -- ACCORDION POLISH -- */
+
+.accordion-button {
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--pet-green);
+    color: white;
+}
+
+.accordion-item {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/* -- BACK TO TOP BUTTON 🐾 -- */
+
+#backToTop {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    background-color: var(--pet-green);
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    font-size: 26px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    transition: 0.2s ease-in-out;
+}
+
+#backToTop:hover {
+    transform: scale(1.09);
+}
+
+/* -- FOOTER -- */
+
+footer {
+    background-color: var(--pet-dark);
+    color: white;
+    padding: 18px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Name: Jacob Roland -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fit for Fun Fitness Club</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fitness</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+
+    <header class="mb-4 p-4 border rounded shadow-sm bg-white">
+      <h1 class="h2 mb-1">Fit for Fun Fitness Club</h1>
+      <p class="mb-0 text-muted">
+        A modern fitness space focused on clarity, balance, and fun.
+      </p>
+    </header>
+    <!-- Bootstrap Carousel -->
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/weightlifting.jpg" class="d-block w-100" alt="weight-lifting">
+        </div>
+        <div class="carousel-item">
+          <img src="images/yoga.webp" class="d-block w-100" alt="yoga">
+        </div>
+        <div class="carousel-item">
+          <img src="images/spin.jpg" class="d-block w-100" alt="spin class">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Single Bootstrap Card -->
+    <section class="mb-5">
+      <div class="card shadow-sm">
+        <img src="images/fitness-card.svg" class="card-img-top" alt="Fitness promotional graphic">
+        <div class="card-body">
+          <h2 class="card-title h4">New Member Orientation</h2>
+          <p class="card-text">A streamlined introduction to our equipment, programs, and training philosophy—designed
+            to help you begin with confidence.</p>
+          <a href="contactus.html" class="btn btn-success">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 text-center text-muted small">
+      <p class="mb-0">&copy; 2025 Fit for Fun Fitness Club</p>
+    </footer>
+
+  </main>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -13,7 +13,7 @@ It is published through GitHub Pages and organized according to professional fil
 
 ## 🌐 Live Site  
 **GitHub Pages URL:**  
-https://github.com/jwroland/jwroland.github.io.git 
+https://jwroland.github.io/ 
 
 ---
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Author: Jacob Roland -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Howard’s Lakeside</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bait.html">Bait & Prices</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2>Send Us a Message</h2>
+      <form method="get" action="https://wp.zybooks.com/form-viewer.php" target="_blank" class="contact-form">
+        <div class="form-row">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Live bait question, pricing, etc.">
+        </div>
+
+        <div class="form-row">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="map">
+      <h2>Visit Us</h2>
+      <iframe
+        title="Map to Howard’s Lakeside General Store"
+        src="https://www.google.com/maps?q=1919+Croft+Rd,+Springfield,+Ohio+45503&output=embed">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Howard’s Lakeside General Store</p>
+  </footer>
+
+</body>
+</html>

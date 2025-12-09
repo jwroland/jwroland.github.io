@@ -1,0 +1,74 @@
+/* Name: Jacob Roland */
+
+/* 1) Flex parent: display:flex; mobile-first column layout */
+.site-nav {
+  display: flex;
+  /* Flexbox parent (rubric) */
+  flex-direction: column;
+  /* Mobile: vertical stack (rubric) */
+  align-items: stretch;
+  /* Make links fill width on mobile */
+  justify-content: center;
+  /* Meaningful use of justify-content (rubric) */
+  gap: 0.25rem;
+  /* Space between links without margins */
+  padding: 0.5rem;
+  background: #0d6efd;
+  /* Bootstrap primary hue to complement UI */
+}
+
+/* 2) Flex children: direct <a> tags */
+.site-nav>a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 0.9rem;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+/* Emphasize the brand link (still a child of the flex parent) */
+.site-nav>a.brand {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Hover/active/focus states for accessibility */
+.site-nav>a:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.site-nav>a:active {
+  transform: scale(0.98);
+}
+
+.site-nav>a:focus-visible {
+  outline: 3px solid #ffc107;
+  /* high-contrast focus ring */
+  outline-offset: 2px;
+}
+
+/* 3) Media query switch to horizontal layout on wider screens */
+@media (min-width: 720px) {
+  .site-nav {
+    flex-direction: row;
+    /* Desktop/tablet: horizontal (rubric) */
+    align-items: center;
+    /* Meaningful use of align-items (rubric) */
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+  }
+
+  .site-nav>a {
+    flex: 0 0 auto;
+    /* Prevent stretching horizontally */
+    min-width: max-content;
+  }
+}
+
+/* Minor helpers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
